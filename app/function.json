@@ -4,8 +4,8 @@
       "name": "myBlob",
       "type": "blobTrigger",
       "direction": "in",
-      "path": "batch/inbound/PENDING_{name}.txt",
-      "connection": "validatechecksum_STORAGE"
+      "path": "batch/inbound/PENDING_{name}.dat",
+      "connection": "BATCH_STORAGE"
     }
   ]
 }

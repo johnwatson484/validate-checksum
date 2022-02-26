@@ -1,11 +1,14 @@
 {
   "name": "validate-checksum",
   "version": "1.0.0",
-  "description": "",
+  "description": "Validate checksum of file",
   "scripts": {
-    "start": "func start",
-    "test": "echo \"No tests yet...\""
+    "start": "func start"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "standard": "^16.0.4"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.8.0"
+  }
 }
