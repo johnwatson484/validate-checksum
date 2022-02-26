@@ -4,7 +4,7 @@
       "name": "myBlob",
       "type": "blobTrigger",
       "direction": "in",
-      "path": "samples-workitems/{name}",
+      "path": "batch/inbound/PENDING_{name}.txt",
       "connection": "validatechecksum_STORAGE"
     }
   ]
