@@ -1,3 +1,6 @@
+[![Build Status](https://dev.azure.com/johnwatson484/John%20D%20Watson/_apis/build/status/Validate%20Checksum?branchName=main)](https://dev.azure.com/johnwatson484/John%20D%20Watson/_build/latest?definitionId=57&branchName=main)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=johnwatson484_validate-checksum&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=johnwatson484_validate-checksum)
+
 # Validate Checksum
 Azure Function to validate checksum of file
 
