@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Validate checksum of file",
   "scripts": {
-    "start": "func start"
+    "start": "func start -p 7070"
   },
   "devDependencies": {
     "standard": "^16.0.4"
