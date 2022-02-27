@@ -81,4 +81,4 @@ stages:
               appType: 'functionAppLinux'
               appName: '$(functionAppName)'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
-              appSettings: '-AzureWebJobsStorage $(storageValidateChecksum) -BATCH_STORAGE $(BATCH_STORAGE)'
+              appSettings: '-BATCH_STORAGE $(BATCH_STORAGE)'
