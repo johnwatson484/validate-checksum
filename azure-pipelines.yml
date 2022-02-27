@@ -65,6 +65,8 @@ stages:
   jobs:
   - deployment: Deploy
     displayName: Deploy
+    variables:
+      - group: Payment Functions
     environment: $(environmentName)
     pool:
       vmImage: $(vmImageName)
@@ -73,9 +75,10 @@ stages:
         deploy:
           steps:
           - task: AzureFunctionApp@1
-            displayName: 'Azure Functions App Deploy: '
+            displayName: 'Azure Functions App Deploy'
             inputs:
               azureSubscription: '$(azureSubscription)'
-              appType: functionAppLinux
-              appName: $(functionAppName)
+              appType: 'functionAppLinux'
+              appName: '$(functionAppName)'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
+              appSettings: '-AzureWebJobsStorage $(storageValidateChecksum) -BATCH_STORAGE $(BATCH_STORAGE)'
