@@ -8,7 +8,6 @@ let container
 
 const connect = (connectionStr) => {
   blobServiceClient = BlobServiceClient.fromConnectionString(connectionStr)
-  blobServiceClient.getContainerClient(containerName)
   container = blobServiceClient.getContainerClient(containerName)
 }
 
